@@ -48,7 +48,9 @@
 	"description": "",
 	"dependencies": {
 		"@fancyapps/ui": "^5.0.36",
-		"bootstrap": "^5.3.3",
-		"font-awesome": "^4.7.0"
+		"animate.css": "3.7.2",
+		"bootstrap": "5.0.2",
+		"tiny-slider": "^2.9.4",
+		"wow.js": "^1.2.2"
 	}
 }

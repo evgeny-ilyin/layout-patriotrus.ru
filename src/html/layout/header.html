@@ -1,19 +1,105 @@
-<header class="header">
-	<div class="content">
-		<div class="header__wrapper">
-
-			<div class="header__logo">
-				<a href="/" aria-label="Главная страница">
-					<svg>
-						<use xlink:href="#logo"></use>
-					</svg>
-				</a>
+<header class="header navbar-area">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-12">
+				<div class="nav-inner">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand style3 logo" href="/">
+							<img src="@img/logo.png" alt="">
+						</a>
+						<button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="toggler-icon"></span>
+							<span class="toggler-icon"></span>
+							<span class="toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+							<ul id="nav" class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a href="/" class="active" aria-label="Toggle navigation">Главная</a>
+								</li>
+								<li class="nav-item">
+									<a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">О движении</a>
+									<ul class="sub-menu collapse" id="submenu-1-2">
+										<li class="nav-item"><a href="/semigin/">Лидер</a></li>
+										<li class="nav-item"><a href="/dvizhenie/">О движении</a></li>
+										<li class="nav-item"><a href="/ustav/">Устав</a></li>
+										<li class="nav-item"><a href="/strategiya/">Стратегия развития России</a></li>
+										<li class="nav-item"><a href="/leaders/">Центральный совет</a></li>
+										<li class="nav-item"><a href="members.html">Депутаты-патриоты</a></li>
+										<li class="nav-item"><a href="regions.html">Региональные отделения</a></li>
+										<li class="nav-item"><a href="/docs/">Документы</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class=" dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-3" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Новости</a>
+									<ul class="sub-menu collapse" id="submenu-1-3">
+										<li class="nav-item"><a href="news.html">Новости</a></li>
+										<li class="nav-item"><a href="/blog/">Позиция</a></li>
+										<li class="nav-item"><a href="https://patriot-rus.ru/">Архив</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class=" dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Медиа</a>
+									<ul class="sub-menu collapse" id="submenu-1-4">
+										<li class="nav-item"><a href="/photo/">Фото</a></li>
+										<li class="nav-item"><a href="/video/">Видео</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a href="/contacts/">Контакты</a>
+								</li>
+								<li class="nav-item">
+									<div class="nav-search">
+										<form role="search" aria-label="найти" method="get" class="search-form" action="https://patriotrus.ru/">
+											<input type="search" id="search-form-1" class="search-field" value="" name="s">
+											<button type="submit" class="search-submit">
+												<svg>
+													<use xlink:href="#search"></use>
+												</svg>
+											</button>
+										</form>
+									</div>
+								</li>
+								<li class="nav-item social">
+									<a href="https://vk.com/gennadiysemigin" target="_blank">
+										<svg>
+											<use xlink:href="#social-vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="nav-item social">
+									<a href="https://ok.ru/group/60737625981019" target="_blank">
+										<svg>
+											<use xlink:href="#social-ok"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="nav-item social">
+									<a href="https://www.facebook.com/gennadiysemigin" target="_blank">
+										<svg>
+											<use xlink:href="#social-fb"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="nav-item social">
+									<a href="https://www.instagram.com/gennadiysemigin/" target="_blank">
+										<svg>
+											<use xlink:href="#social-in"></use>
+										</svg>
+									</a>
+								</li>
+								<li class="nav-item social">
+									<a href="https://t.me/gennadiysemigin" target="_blank">
+										<svg>
+											<use xlink:href="#social-tg"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</div>
-
-			<div class="header__nav">
-				@@include('nav.html', {})
-			</div>
-
 		</div>
 	</div>
 </header>

@@ -1,5 +1,5 @@
 /* Проверка поддержки webp браузером */
-export function isWebp() {
+/* export function isWebp() {
 	function testWebP(callback) {
 		let webP = new Image();
 		webP.onload = webP.onerror = function () {
@@ -15,22 +15,23 @@ export function isWebp() {
 		}
 	});
 }
+*/
 
 export function stickyHeader() {
-	const header = document.querySelector("header");
+	const header = document.querySelector(".navbar-area");
 
 	let handleScroll = () => {
 		if (window.scrollY > 0) {
-			header.classList.add("header_fixed");
+			header.classList.add("sticky");
 		} else {
-			header.classList.remove("header_fixed");
+			header.classList.remove("sticky");
 		}
 	};
 	window.addEventListener("scroll", handleScroll);
 	handleScroll();
 }
 
-export function isTouchDevice() {
+/* export function isTouchDevice() {
 	const touchClass = "is-touch";
 	["load", "resize"].forEach((evt) =>
 		window.addEventListener(evt, () => {
@@ -54,8 +55,9 @@ export function isTouchDevice() {
 		})
 	);
 }
+*/
 
-export function closeMenuHandler() {
+/* export function closeMenuHandler() {
 	const menuToggler = document.getElementById("menu-toggle"),
 		menuWrapper = document.querySelector(".menu-wrapper"),
 		linkClassName = "nav__link";
@@ -67,5 +69,38 @@ export function closeMenuHandler() {
 				menuToggler.click();
 			}
 		}
+	});
+} */
+
+export function closeMenuHandler() {
+	let menuToggler = document.querySelector(".mobile-menu-btn");
+	menuToggler.addEventListener("click", function () {
+		menuToggler.classList.toggle("active");
+	});
+}
+
+export function scrollToTop() {
+	const toTopBtn = document.getElementById("scrollToTop"),
+		toTopBtnClass = "is-visible";
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			toTopBtn.classList.add(toTopBtnClass);
+		} else {
+			toTopBtn.classList.remove(toTopBtnClass);
+		}
+	}
+
+	function toTop() {
+		document.body.scrollTop = 0; // Safari
+		document.documentElement.scrollTop = 0;
+	}
+
+	window.onscroll = function () {
+		scrollFunction();
+	};
+
+	document.addEventListener("click", (e) => {
+		if (e.target === toTopBtn) toTop();
 	});
 }

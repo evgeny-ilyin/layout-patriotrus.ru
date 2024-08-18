@@ -2,10 +2,15 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+:root {
+	--main-color-one: #f12711;
+	--main-color-two: #015eea;
+}
+
 //** Fonts
 /// Headers font family
 /// @type List
-$family-headers: "TT Firs Neue", "Roboto", "Helvetica", "Open Sans", "Arial", sans-serif !default;
+$family-headers: "Montserrat", "Roboto", "Helvetica", "Open Sans", "Arial", sans-serif !default;
 
 /// Regular font family
 /// @type List
@@ -21,9 +26,9 @@ $browser-context: 16;
 //** Colors --var
 /// Simple colors
 /// @type Color
-$black: var(--black);
-$white: var(--white);
-$gray: var(--gray);
+$black: #000;
+$white: #fff;
+$gray: #ddd;
 $red: #f12711;
 $error: #f12711;
 
@@ -42,7 +47,7 @@ $brand-color-accent: #e35833 !default;
 
 /// Text color
 /// @type Color
-$text-color: $black;
+$text-color: #444;
 $href-color: $black;
 $href-color-hover: $black;
 
@@ -75,5 +80,10 @@ $breakpoints: (
 	"fhd": 1920px,
 ) !default;
 
-/// Icons base64
-// $menu-arrow-white: "data:image/svg+xml;base64,.....";
+/// Icons
+$svg-arrow-white: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 330 330'%3E%3Cpath fill='%23fff' d='M15 180h263.787l-49.394 49.394c-5.858 5.857-5.858 15.355 0 21.213C232.322 253.535 236.161 255 240 255s7.678-1.465 10.606-4.394l75-75c5.858-5.857 5.858-15.355 0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213 0-5.858 5.857-5.858 15.355 0 21.213L278.787 150H15c-8.284 0-15 6.716-15 15s6.716 15 15 15z'/%3E%3C/svg%3E");
+$svg-arrow-orange: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 330 330'%3E%3Cpath fill='%23f19801' d='M15 180h263.787l-49.394 49.394c-5.858 5.857-5.858 15.355 0 21.213C232.322 253.535 236.161 255 240 255s7.678-1.465 10.606-4.394l75-75c5.858-5.857 5.858-15.355 0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213 0-5.858 5.857-5.858 15.355 0 21.213L278.787 150H15c-8.284 0-15 6.716-15 15s6.716 15 15 15z'/%3E%3C/svg%3E");
+$svg-article-shape: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 1920 323'%3E%3Cstyle%3E.i%7Bfill:%23f19801%7D%3C/style%3E%3Cpath d='M0 323h1920V0z' class='i' opacity='.825'/%3E%3Cpath d='M-.5 322.5v-191l658.8 80.8z' class='i' opacity='.985'/%3E%3C/svg%3E");
+$svg-i-email: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m4 7 6.2 4.65a3 3 0 0 0 3.6 0L20 7'/%3E%3Crect width='18' height='14' x='3' y='5' stroke='%23fff' stroke-linecap='round' stroke-width='2' rx='2'/%3E%3C/svg%3E");
+$svg-i-phone: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='m16.556 12.906-.455.453s-1.083 1.076-4.038-1.862-1.872-4.014-1.872-4.014l.286-.286c.707-.702.774-1.83.157-2.654L9.374 2.86C8.61 1.84 7.135 1.705 6.26 2.575l-1.57 1.56c-.433.432-.723.99-.688 1.61.09 1.587.808 5 4.812 8.982 4.247 4.222 8.232 4.39 9.861 4.238.516-.048.964-.31 1.325-.67l1.42-1.412c.96-.953.69-2.588-.538-3.255l-1.91-1.039c-.806-.438-1.787-.309-2.417.317Z'/%3E%3C/svg%3E");
+$svg-i-geo: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='bi bi-geo-alt-fill' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z'/%3E%3C/svg%3E");

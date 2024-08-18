@@ -13,6 +13,7 @@ html {
 	cursor: default;
 }
 
+
 body {
 	position: relative;
 	display: flex;
@@ -22,6 +23,9 @@ body {
 	// sticky для сайдбара не работает, если для html стоит overflow-x: hidden; (выше), нужен clip (ниже), но тогда возникают проблемы у body.noscroll
 	// overflow-x: hidden;
 	// overflow-y: scroll;
+
+	color: $text-color;
+	font: normal rem(18) / 1.5 $family-text !important;
 }
 
 // body,
